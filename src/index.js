@@ -4,11 +4,11 @@ const port = process.env.PORT || 3000;
 
 //Rota para o sub dominio esp [Sub dominio principal]
 
-app.get('/home/css', function(req, res){
+app.get('/', function(req, res){
     res.sendFile(path.join(__dirname, 'page/index.html'));
 });
 
-app.get('/home/css', function(req, res){
+app.get('/css', function(req, res){
     res.sendFile(path.join(__dirname, 'page/style.css'));
 });
 
